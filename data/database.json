@@ -1,0 +1,205 @@
+{
+    "CLIENT": [
+        {
+            "client_id": 1,
+            "client_name": "Иван Иванов",
+            "contact_info": "ivan@example.com"
+        }
+    ],
+    "PRICE_LIST": [
+        {
+            "price_id": 1,
+            "asset_type": "3D-модель",
+            "complexity": "Простая",
+            "base_price": 5000
+        },
+        {
+            "price_id": 2,
+            "asset_type": "3D-модель",
+            "complexity": "Средняя",
+            "base_price": 10000
+        },
+        {
+            "price_id": 3,
+            "asset_type": "3D-модель",
+            "complexity": "Сложная",
+            "base_price": 20000
+        },
+        {
+            "price_id": 4,
+            "asset_type": "Текстура",
+            "complexity": "Простая",
+            "base_price": 2000
+        },
+        {
+            "price_id": 5,
+            "asset_type": "Текстура",
+            "complexity": "Средняя",
+            "base_price": 4000
+        }
+    ],
+    "ORDER": [
+        {
+            "order_id": 1,
+            "client_id": 1,
+            "price_id": 2,
+            "stage_id": 2,
+            "quantity": 3,
+            "unit_price": 10000,
+            "total_price": 30000,
+            "order_date": "2026-11-01T16:26:59",
+            "deadline": "2026-12-15T00:00:00",
+            "status": "В работе"
+        }
+    ],
+    "ORDER_STAGE": [
+        {
+            "stage_id": 1,
+            "stage_name": "Новый заказ"
+        },
+        {
+            "stage_id": 2,
+            "stage_name": "Моделирование"
+        },
+        {
+            "stage_id": 3,
+            "stage_name": "Текстурирование"
+        },
+        {
+            "stage_id": 4,
+            "stage_name": "Проверка качества"
+        },
+        {
+            "stage_id": 5,
+            "stage_name": "Ожидание согласования"
+        },
+        {
+            "stage_id": 6,
+            "stage_name": "Завершён"
+        }
+    ],
+    "THREE_D_ASSET": [
+        {
+            "asset_id": 1,
+            "order_id": 1,
+            "asset_name": "old_mossed_lamp",
+            "directory_path": "C:\\vuz\\StudyPractice\\TestFolder"
+        }
+    ],
+    "CHECK": [
+        {
+            "check_id": 1,
+            "asset_id": 1,
+            "check_date": "2026-11-01T17:20:02",
+            "overall_status": "Успешно"
+        }
+    ],
+    "FILE": [
+        {
+            "file_id": 1,
+            "check_id": 1,
+            "file_name": "moss_rocks_lamp_Albedo.tga",
+            "extension": ".tga",
+            "size_bytes": 16777260
+        },
+        {
+            "file_id": 2,
+            "check_id": 1,
+            "file_name": "moss_rocks_lamp_AO.tga",
+            "extension": ".tga",
+            "size_bytes": 12582956
+        },
+        {
+            "file_id": 3,
+            "check_id": 1,
+            "file_name": "moss_rocks_lamp_Metallic.tga",
+            "extension": ".tga",
+            "size_bytes": 16777260
+        },
+        {
+            "file_id": 4,
+            "check_id": 1,
+            "file_name": "moss_rocks_lamp_Normal.tga",
+            "extension": ".tga",
+            "size_bytes": 12582956
+        },
+        {
+            "file_id": 5,
+            "check_id": 1,
+            "file_name": "old_mossed_lamp_render.blend",
+            "extension": ".blend",
+            "size_bytes": 1953039
+        },
+        {
+            "file_id": 6,
+            "check_id": 1,
+            "file_name": "Документация.txt",
+            "extension": ".txt",
+            "size_bytes": 104
+        }
+    ],
+    "CRITERION": [
+        {
+            "criterion_id": 1,
+            "criterion_name": "Наличие 3D-модели",
+            "criterion_description": "Наличие 3D-модели"
+        },
+        {
+            "criterion_id": 2,
+            "criterion_name": "Наличие текстур",
+            "criterion_description": "Наличие текстур"
+        },
+        {
+            "criterion_id": 3,
+            "criterion_name": "Наличие документации",
+            "criterion_description": "Наличие документации"
+        },
+        {
+            "criterion_id": 4,
+            "criterion_name": "Отсутствие пустых файлов",
+            "criterion_description": "Отсутствие пустых файлов"
+        },
+        {
+            "criterion_id": 5,
+            "criterion_name": "Допустимые расширения файлов",
+            "criterion_description": "Допустимые расширения файлов"
+        }
+    ],
+    "CHECK_RESULT": [
+        {
+            "result_id": 1,
+            "check_id": 1,
+            "criterion_id": 1,
+            "result_status": true,
+            "comment": "Критерий выполнен"
+        },
+        {
+            "result_id": 2,
+            "check_id": 1,
+            "criterion_id": 2,
+            "result_status": true,
+            "comment": "Критерий выполнен"
+        },
+        {
+            "result_id": 3,
+            "check_id": 1,
+            "criterion_id": 3,
+            "result_status": true,
+            "comment": "Критерий выполнен"
+        },
+        {
+            "result_id": 4,
+            "check_id": 1,
+            "criterion_id": 4,
+            "result_status": true,
+            "comment": "Критерий выполнен"
+        },
+        {
+            "result_id": 5,
+            "check_id": 1,
+            "criterion_id": 5,
+            "result_status": true,
+            "comment": "Критерий выполнен"
+        }
+    ]
+}
