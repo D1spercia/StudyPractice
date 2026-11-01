@@ -27,7 +27,7 @@ else:
 
                 files.append({"name": name, "extension": extension, "size": size})
 
-            # Проверка пяти критериев
+        # Проверка пяти критериев
         has_model = any(file["extension"] in model_extensions for file in files)
 
         has_texture = any(file["extension"] in texture_extensions for file in files)
@@ -69,7 +69,7 @@ else:
         else:
             print("\nИтоговый статус: Не пройдено")
 
-    except PermisiionError:
+    except PermissionError:
         print("Ошибка: нет доступа к содержимому папки")
     except OSError:
         print("Ошибка при чтении содержимого папки")
